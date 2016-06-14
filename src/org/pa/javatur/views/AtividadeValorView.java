@@ -13,7 +13,8 @@ public class AtividadeValorView extends javax.swing.JDialog {
         initComponents();
         
         this.atividadeLocal = atividadeLocal;
-        
+        txfAtividade.setText(this.atividadeLocal.toString());
+                
         super.setResizable(false);
         super.setLocationRelativeTo(null);
         super.setVisible(true);

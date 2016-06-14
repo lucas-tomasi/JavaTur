@@ -391,8 +391,8 @@ public class RotaView extends javax.swing.JDialog implements FormViewInterface<R
         }
         this.setVisible(false);
         new LocalView(null, true, this, locais);
-        this.setVisible(true);
         atualizarTabela();
+        this.setVisible(true);
     }//GEN-LAST:event_btnAdicionarActionPerformed
 
     private void txfvagasKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txfvagasKeyTyped
@@ -455,6 +455,7 @@ public class RotaView extends javax.swing.JDialog implements FormViewInterface<R
     public void adicionarLocal()
     {
         new LocalView(null, true, this, locais);
+        System.out.println(locais);
     }
     
     public void atualizarTabela()

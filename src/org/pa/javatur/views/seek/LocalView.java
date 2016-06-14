@@ -348,7 +348,7 @@ public class LocalView extends javax.swing.JDialog implements ListViewInterface<
         boolean find = false;
         
         
-        for( LocalRota localRota : locaisrotas )
+            for( LocalRota localRota : locaisrotas )
         {
             find |= localRota.getDtRota().equals( date ) && localRota.getRefLocal() == currentLocal.getId();
         }

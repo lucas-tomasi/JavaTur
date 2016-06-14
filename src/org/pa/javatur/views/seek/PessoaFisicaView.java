@@ -278,7 +278,7 @@ public class PessoaFisicaView extends javax.swing.JDialog implements SeekViewInt
        
     public void selecionar() 
     {
-        if( tblPessoasFisicas.getSelectedRow() > 0 )
+        if( tblPessoasFisicas.getSelectedRow() >= 0 )
         {
             this.setVisible(false);
             PessoaFisica pessoa = (PessoaFisica) tblPessoasFisicas.getValueAt(tblPessoasFisicas.getSelectedRow(),0);
